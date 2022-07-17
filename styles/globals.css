@@ -7,4 +7,7 @@
     .icon {
         @apply ml-2 hover:cursor-pointer h-8 w-8 text-[#E85A4F] 
     }
+    .images {
+        @apply rounded-full cursor-pointer border-spacing-2 shadow-sm shadow-[#E98074] border-[#E98074]
+    }
 }
