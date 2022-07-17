@@ -3,3 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .icon {
+        @apply ml-2 hover:cursor-pointer h-8 w-8 text-[#E85A4F] 
+    }
+}
