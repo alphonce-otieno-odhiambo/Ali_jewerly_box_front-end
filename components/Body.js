@@ -1,10 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import gold from "../public/img/gold-watch.JPG";
 import icetwo from "../public/img/ice-two-w.JPG";
 import icecross from "../public/img/icecross.jpg"
 import slimw from "../public/img/iced-slim-watch.JPG"
 import teeth from "../public/img/icedteeth.jpg"
+import Info from './Info';
 // import icevideo from "../public/assets/icebox.mp4"
 
 
@@ -22,39 +24,32 @@ function Body() {
       <div className='absolute top-0 h-screen w-full backdrop-blur-smbg-gradient-to-br  from-[#EAE7DC]/30 to-[#D8C3A5]/40  '> </div>
 
       <div className='ml-2 flex items-center scroll-bar scroll-bar-hide '>
-        <div className='flex-grow' >
-        <Image
+        <motion.div
+         initial="hidden" animate="visible" variants={{
+           hidden:{
+             scale:.8,
+             opacity:0,
+           },
+           visible:{
+             scale:1,
+             opacity:1,
+             transition:{
+               delay:.8,
+             }
+           }
+         }}
+        >
+        <Image 
         src={gold}
         height={200}
         width={200}
         className="images"
         />
-        </div>
-       
-        <Image
-        src={icetwo}
-        height={200}
-        width={200}
-        className="images"
-        />
-        <Image
-        src={icecross}
-        height={200}
-        width={200}
-        className="images"
-        />
-        <Image
-        src={slimw}
-        height={200}
-        width={200}
-        className="images"
-        />
-        <Image
-        src={teeth}
-        height={200}
-        width={200}
-        className="images"
-        />
+        </motion.div>
+      
+      </div>
+      <div className='pl-20 mt-8'>
+        <Info/>
       </div>
     </section>
   )

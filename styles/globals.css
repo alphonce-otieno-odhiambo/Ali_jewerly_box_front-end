@@ -10,4 +10,8 @@
     .images {
         @apply rounded-full cursor-pointer border-spacing-2 shadow-sm shadow-[#E98074] border-[#E98074]
     }
+    .card {
+        @apply bg-[#EAE7DC]/50 text-[#E85A4F] min-h-[26rem] w-72 shadow-lg rounded-md overflow-hidden
+
+    }
 }
