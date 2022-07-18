@@ -21,7 +21,7 @@ function Body() {
       <div className='absolute w-16 h-16  backdrop-blur-sm bg-[#8E8D8A]/30 rounded-full z-9 inset-y-2/4 inset-x-3/4 '> </div>
       <div className='absolute top-0 h-screen w-full backdrop-blur-smbg-gradient-to-br  from-[#EAE7DC]/30 to-[#D8C3A5]/40  '> </div>
 
-      <div className='ml-2 flex items-center'>
+      <div className='ml-2 flex items-center scroll-bar scroll-bar-hide '>
         <div className='flex-grow' >
         <Image
         src={gold}
